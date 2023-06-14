@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>course css</title>
+<!--     <link rel="stylesheet" href="/Stylos.css/css/reset.css">
+ -->    <link rel="stylesheet" href="/Stylos.css/css/normalize.css">
+    <link rel="stylesheet" href="/Stylos.css/css/style.css" >
+  </head>
+  <body>
+    <h1>Aprendiendo css</h1>
+    <p><i>Cascading style sheet</i>-hojas de stilo en cascada-</p>
+
+    <h2 id="temario-css">temario del curso</h2>
+    <ul>
+      <li><a href="index.html#selectores-basicos">selectores basicos</a></li>
+      <li><a href="index.html#selectores-avanzados">selectores avanzados</a></li>
+      <li><a href="index.html#pseudoelementos">pseudoelementos</a></li>
+      <li><a href="index.html#agrupar-selectores">selectores agrupados</a></li>
+      <li><a href="index.html#algoritmo-css">algoritmo-css</a></li>
+      <li><a href="/box-model.html">modelo-de-caja</a></li>
+      <li><a href="/position.html">posicionamiento-css</a></li>
+
+    </ul>
+
+    <hr />
+
+    <article id="selectores-basicos">
+      <h2>selectores basicos</h2>
+
+      <p class="text-20 bg-skyblue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        soluta quas itaque, quod nam iusto cupiditate et sunt. Modi, distinctio
+        sint. Esse nihil sed unde mollitia, ab aliquam voluptas necessitatibus.
+      </p>
+
+      <p id="parrafo-dos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+        architecto cum in quisquam facilis adipisci ut quam laboriosam odio quos
+        tempore, velit ea pariatur, quasi illo sequi doloremque voluptates
+        necessitatibus.
+      </p>
+
+      <p class="text-32 bg-steelblue">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        molestiae inventore assumenda voluptatum quod provident tenetur ullam
+        distinctio sequi libero, modi ad voluptatem adipisci explicabo enim
+        excepturi error fugit neque!
+      </p>
+
+      <a href="index.html#temario-css">🍔</a>
+    </article>
+    <hr />
+    <article id="selectores-avanzados">
+        <h2>selectores avanzados</h2>
+        <h3>selector hijo</h3>
+        <h4>selector hijo directo</h4>
+
+        <ul class="hijos-directos">
+                <li><b>primavera</b></li>
+                <li> <b>verano</b></li>
+                <li><b>otoño</b></li>
+                <li><b>invierno</b></li>
+        </ul>
+            <h4>selector hijos decendientes</h4>
+            <ul class="hijos-decendientes">
+                <li><b>primavera</b></li>
+                <li> <b>verano</b></li>
+                <li><b>otoño</b></li>
+                <li><b>invierno</b></li>
+        </ul>
+   <h3> selectores hermanos</h3>
+        <h4>selector hermano general</h4>
+<ul class="hijos-decendientes">
+    <li><b>primavera</b></li>
+    <li class="hermano-general"> <b>verano</b></li>
+    <li><b>otoño</b></li>
+    <li><b>invierno</b></li>
+
+    <h4>selector hermaano adyacente</h4>
+    <ul class="hijos-decendientes">
+        <li><b>primavera </b></li>
+        <li class="hermano-adyacente"> <b>verano</b></li>
+        <li><b>otoño</b></li>
+        <li><b>invierno</b></li>
+
+        <h3>selectores de atributos</h3>
+        <nav class="selectores-atributo">
+            <ul>
+                <li><a href="https://jonmircha.com/" target="_blank">inicio</a></li>
+                <li><a href="https://jonmircha.com/cursos" target="_blank">cursos</a></li>
+                <li><a href="https://jonmircha.com/blog" target="_blank">block</a></li>
+                <li><a href="https://jonmircha.com/mentoria" target="_blank">mentoria</a></li>
+                <li><a href="https://jonmircha.com/hola" target="_blank">hola</a></li>
+               <!--  <li><a href="" target="_blank">haora</a></li> -->
+            </ul>
+
+            <hr>
+            <br><br><br>
+
+            <h2>pseudoclases</h2>
+<!--                   pseudoclases por order
+ -->            <ol class="lista-pseudoclases">
+              <li>aries</li>
+              <li>tauro</li>
+              <li>geminis</li>
+              <li>cancer</li>
+              <li>leo</li>
+              <li>virgo</li>
+              <li>libra</li>
+              <li>escorpion</li>
+              <li>sagitario</li>
+              <li>capricornio</li>
+              <li>acuario</li>
+              <li>picsis</li>
+            </ol>
+        </nav>
+
+      <a href="index.html#temario-css">🍔</a>
+    </article>
+
+    <hr><br>
+   
+
+   <hr>
+   <br>
+   <article id="pseudoelementos">
+     <h2>pseudoelementos</h2>
+     <p>
+      <i>Banday myth cloct tex</i> <span class="saga-geminis">saga geminis</span>
+       <span class="saga-precio">500</span>
+     </p>
+ 
+     <a href="index.html#temario-css">🍔</a>
+   </article>
+
+
+   <article id="agrupar-selectores" class="agrupar-selector">
+          <h2>agrupar selectores</h2>
+          <form class="form-agrupar-selectores"  class="form-import">
+            <input type="text" name="nombre" placeholder="ingrese tu nombre" >
+            <input type="email" name="correo" placeholder="escribe tu correo">
+            <textarea name="comentarios" placeholder="escribe tus comentarios" cols="30" rows="10"></textarea>
+          </form>
+    <a href="index.html#temario-css">🍔</a>
+  </article>
+
+<hr>
+            <article id="algoritmo-css" >
+              <h2>algoritmo-css</h2>
+              <ul>
+                <li>la cascada</li>
+                <li>la especificidad</li>
+                <li>la herencia</li>
+              </ul>
+              <a href="index.html#temario-css">🍔</a>
+            </article> 
+
+              <hr>
+              <br>
+            <article id="model-caja">
+              <h2>modelo de caja</h2>
+              <a href="index.html#temario-css">🍔</a>
+
+            </article>
+  </body>
+      </html>

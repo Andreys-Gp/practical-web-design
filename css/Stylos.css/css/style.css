@@ -1,0 +1,129 @@
+ /* Reglas css consta de dos partes
+ 1)el selector
+ 2)bloque de declaracion :{
+    - atributo:valor;
+       atributo-de-mas-de-dps-palabras:otro-valor;
+ } */
+
+  /* llamando otra hoja de stylos  @import es una mala practica css */
+ @import url("2hoja.stlylos.css");
+
+     h1 {
+        color: orange;
+        background-color: blue;
+     }  
+
+      /* existen tres selectores basicos 
+      1)etiquetas-son elementos html
+      2)identificadores-atributo id-#
+      3)clases - atributos class- . */
+      
+      p {
+        color: blueviolet;
+      }
+ 
+/*         dar stylo con id se considera como un anti patron en css
+ */       #parrafo-dos{
+        background-color: aquamarine;
+       }
+
+/*         Dar estylos con clases permite reutilizar codigo css
+ */
+         .text-20{
+            font-size:20px;
+         }      
+           .text-32{
+            font-size: 32px;
+           }
+           .bg-skyblue{
+            background-color: skyblue;
+           }
+           .bg-steelblue{
+            background-color: steelblue;
+           }
+           .text-white{
+            color: white;
+           }
+
+           .hijos-directos > li {
+            background-color: thistle;
+           }
+            .hijos-decendientes b{
+                background-color: indianred;
+            }
+
+/*              los selectores de hermano solo aplica alos elementos hermanos y q
+           ue esten por debajo del elemento referencia
+ */             .hermano-general ~ li{
+                   background-color: aqua;
+             }
+                    .hermano-adyacente + li{
+                        background-color: navajowhite;
+                    }
+
+
+/*                     selectores atributo
+ */             .selectores-atributo a[href] {
+          color: orange;
+ }         
+         .selectores-atributo a[target="_blank"]{
+               font-weight: bold;
+               font-size: xx-small;
+         }
+
+                                       /* COMODINES */
+/*           el comodin del asterico aplica solo alos que tienen la palabra en cualquier parte  a[href*="palabra"]  (*) */
+/*        el comodin dle ^ se aplica al stylo si contiene la pabra al inicio de que uno coloque  a[href^="palabra"]
+  */   /* el comodin $ aplica cuando el stylo contiene la palabra al final a[href$="palabra"] 
+
+ */
+/*            selector universal *
+ */                 
+/*         id # */
+ 
+/*                 pseudoclases por orden
+ */      .lista-pseudoclases li:first-child {
+                        color: green;
+      }
+        .lista-pseudoclases li:nth-child(4){
+         color: aqua;
+        }
+
+
+         /* pseudoelementos - dan estylos a partes especificas de un elemento, se usa :: para diferenciar 
+          delos pseudoclases  */
+          .saga-geminis::before {
+                  content: "hola";
+                  content: "🏇";
+          }  .saga-geminis::after{
+            content: "👮‍♂️";
+          }
+                .saga-precio::before{
+                  content: "$";
+                }
+                 .saga-precio::after{
+                  content: "usd";
+                 }
+
+
+                 .agrupar-selector {
+                  background-color: lightgray !important;
+                 }
+                  .form-import {
+                    background-color:black !important;
+                  }
+/*                  agrupar selectores  */
+
+               .form-agrupar-selectores input[type="text"],
+               .form-agrupar-selectores input[type="email"],
+               .form-agrupar-selectores textarea {
+                   border-color:aqua;
+                   border-width: 2px;
+                   background-color: violet;
+                   font-size: 20px;
+                   display: block;
+                   width: 100pc;
+               }
+
+               
+
